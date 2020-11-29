@@ -1,0 +1,27 @@
+.country {
+  color: blue;
+}
+
+.card {
+  border-style: solid;
+  padding: 20px auto;
+  margin: 0 auto;
+  border-block-color: blue;
+}
+
+.current-emoji {
+  color: yellow;
+  font-size: 70px;
+}
+.card-body {
+  color: yellow;
+  border: 10px;
+  border-radius: 10px 10px 5px;
+}
+
+h2 {
+  color: pink;
+}
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
