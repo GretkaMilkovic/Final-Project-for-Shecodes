@@ -1,35 +1,82 @@
-.search-form {
-  display: block;
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
 
-  padding: 27px;
-  border-radius: 7px;
-  box-shadow: 7px 7px 5px #808080;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
-  border: none;
+  max-width: 600px;
+}
+.weather-app {
+  margin: 30px 0 auto;
 }
 
-.card {
-  border-style: solid;
-  padding: 20px auto;
-  margin: 0 auto;
-  border-block-color: blue;
+.search-form {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  padding: 27px 30px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 5px #808080;
+  border: solid black;
+}
+.search-form:hover {
+  border: solid black;
 }
 
 .current-emoji {
   color: rgb(7, 7, 6);
   font-size: 70px;
 }
-.card-body {
-  color: rgb(8, 8, 6);
-  border: 10px;
-  border-radius: 10px 10px 5px;
+
+.country {
+  font-size: 40px;
+  list-style: none;
+  color: blueviolet;
+}
+h1 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 38px;
+  list-style: none;
 }
 
-body {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+h2 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: white;
 }
+
+h3 {
+  color: rgb(8, 8, 6);
+
+  list-style-type: none;
+  border: solid;
+
+  background: white;
+
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: lighter;
+  padding: 20px 5px;
+
+  position: relative;
+  left: 600px;
+  top: -260px;
+}
+li {
+  list-style-type: none;
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+}
+
 container {
   max-width: 850px;
   padding: 60px;
