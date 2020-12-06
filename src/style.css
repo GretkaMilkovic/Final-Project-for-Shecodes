@@ -3,7 +3,7 @@ body {
 
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
-  max-width: 600px;
+  max-width: 550px;
 }
 .weather-app {
   margin: 30px 0 auto;
@@ -56,7 +56,7 @@ h3 {
   list-style-type: none;
   border: solid;
 
-  background: white;
+  background: whitesmoke;
 
   display: block;
   margin-block-start: 1.33em;
@@ -75,12 +75,6 @@ li {
   color: black;
   font-weight: normal;
   font-size: 20px;
-}
-
-container {
-  max-width: 850px;
-  padding: 60px;
-  margin: 0 auto;
 }
 
 footer {
