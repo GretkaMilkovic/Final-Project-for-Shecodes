@@ -1,12 +1,10 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
-  max-width: 550px;
+  background-image: url(/src/clouds.jpg);
 }
 .weather-app {
-  margin: 30px 0 auto;
+  margin: 30px auto;
+  max-width: 700px;
 }
 
 .search-form {
@@ -14,74 +12,38 @@ body {
   margin: auto;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  position: relative;
-  padding: 27px 30px;
-  border-radius: 7px;
-  box-shadow: 7px 7px 5px #808080;
-  border: solid black;
-}
-.search-form:hover {
-  border: solid black;
 }
 
-.current-emoji {
-  color: rgb(7, 7, 6);
-  font-size: 70px;
-}
-
-.country {
-  font-size: 40px;
-  list-style: none;
-  color: blueviolet;
-}
 h1 {
   font-weight: normal;
-  text-align: left;
-  font-size: 38px;
-  list-style: none;
+  text-align: center;
+  font-size: 50px;
 }
-
-h2 {
+​h2 {
   font-weight: normal;
-  text-align: left;
-  font-size: 25px;
-  list-style: none;
-  color: white;
+  text-align: center;
+  font-size: 50px;
 }
 
-h3 {
+​ h3 {
+  text-align: center;
   color: rgb(8, 8, 6);
 
-  list-style-type: none;
-  border: solid;
-
-  background: whitesmoke;
-
-  display: block;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: lighter;
-  padding: 20px 5px;
-
-  position: relative;
-  left: 600px;
-  top: -260px;
+  list-style: none;
 }
 li {
   list-style-type: none;
   color: black;
   font-weight: normal;
   font-size: 20px;
+  display: inline-block;
+  padding-inline: 50px;
 }
 
-footer {
+​ footer {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
-
-  font-size: 12px;
+  font-size: 5px;
   color: rgb(94, 91, 91, 10);
 }
