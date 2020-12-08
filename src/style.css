@@ -39,22 +39,6 @@ h1 {
   color: pink;
 }
 
-​ h3 {
-  text-align: center;
-  color: rgb(8, 8, 6);
-
-  list-style: none;
-  font-weight: solid;
-}
-li {
-  list-style-type: none;
-  color: black;
-  font-weight: normal;
-  font-size: 20px;
-  display: inline-block;
-  padding-inline: 48px;
-}
-
 ​ footer {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
