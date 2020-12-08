@@ -1,3 +1,4 @@
+
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
@@ -30,9 +31,17 @@ function displayWeatherCondition(response) {
   );
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+
+
+  document.querySelector("#pressure").innerHTML = Math.round(
+    response.data.main.pressure
+  );
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+
+  
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
@@ -42,6 +51,9 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+console.log(apiUrl);
+
+
 function searchLocation(position) {
   let apiKey = "82b95efea5e472e6661eb0b2204689f3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -69,7 +81,7 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
+  temperatureElement.innerHTML = 2;
 }
 
 let dateElement = document.querySelector("#date");
