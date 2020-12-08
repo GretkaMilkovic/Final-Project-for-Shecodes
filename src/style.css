@@ -23,6 +23,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p {
+  text-align: right;
+  position: relative;
+  bottom: 27px;
+}
 h1 {
   font-weight: normal;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
