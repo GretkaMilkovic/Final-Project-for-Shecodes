@@ -44,10 +44,24 @@ h3 {
   color: black;
 }
 
-​ footer {
+
+.values{
+  
+  text-align: center;
+  position: relative;
+}
+.calendar{
+
+  text-align: center;
+  position: relative;
+  left:3px;
+
+}
+footer {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
-  font-size: 5px;
+  font-size: 12px;
   color: rgb(94, 91, 91, 10);
+  opacity: 10px;
 }
