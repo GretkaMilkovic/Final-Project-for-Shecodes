@@ -11,17 +11,17 @@ function formatDate(date) {
 
   let dayIndex = date.getDay();
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thur",
+    "Fri",
+    "Sat",
   ];
   let day = days[dayIndex];
 
-  return `${day} ${hours}:${minutes}`;
+  return ` ${hours}:${minutes}, ${day}`;
 }
 
 function displayWeatherCondition(response) {
