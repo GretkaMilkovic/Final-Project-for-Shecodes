@@ -44,10 +44,22 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
-let apiKey = "82b95efea5e472e6661eb0b2204689f3";
+function search(city) {
+  let apiKey = "82b95efea5e472e6661eb0b2204689f3";
 let city= "Munich";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
+  
+
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Munich");
 
 
-
+let form = document.querySelector("search-form");
+form.addEventListener("enter",handleSubmit;
