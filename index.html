@@ -42,14 +42,19 @@
       <br />
       <br />
     
-      <h1>MUNICH</h1>
-
-      <h2>
-        2°C|10 F
-      </h2>
+      <h1 id="city"></h1>
+<h2>
      
-      <h3>
-        Clear
+        <strong id="temperature"></strong
+        ><span class="units"
+          ><a href="#" id="celsius-link" class="active">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a></span
+        >
+     
+    </h2>
+
+
+      <h3 id="description">
       </h3>
 
       <br />
@@ -61,16 +66,19 @@
 
       <div class="row">
         
-          <div class="col-sm">Humidity</div>
+          <div class="col-sm"><strong>Humidity</strong>
+
+       </div>
         
           <div class="col-sm">Wind</div>
           
         </div>
     
         <div class="row">
-          <div class="col-sm">40%</div>
+          <div class="col-sm"><span id="humidity"></span>%</div>
        
-          <div class="col-sm">15km/h</div>
+          <div class="col-sm"><span id="wind"></span>km/h</div>
+       
          
         </div>
       </div>
