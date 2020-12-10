@@ -41,7 +41,7 @@ function displayTemperature(response)
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 
-  cityElement.innerHTML = response.data.main.city;
+  cityElement.innerHTML = response.data.name;
   
   descriptionElement.innerHTML = response.data.weather[0].description;
 }
@@ -88,7 +88,7 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
 let form = document.querySelector("#search-form");
-form.addEventListener("enter", handleSubmit);
+form.addEventListener("submit", handleSubmit);
 
 
 search("Munich");
