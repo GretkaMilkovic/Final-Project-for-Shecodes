@@ -46,7 +46,7 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "82b95efea5e472e6661eb0b2204689f3";
-let city= "Munich";
+
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
   
@@ -58,8 +58,35 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+
+
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("enter", handleSubmit);
+
+
 search("Munich");
-
-
-let form = document.querySelector("search-form");
-form.addEventListener("enter",handleSubmit;

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   background: url("clouds.jpg");
   height: 100%;
   background-position: center;
@@ -11,10 +11,11 @@ body {
   max-width: 700px;
 }
 
-.search-form {
+.city-input {
   display: block;
   margin: auto;
   width: 100%;
+  padding: 50 px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,11 +23,12 @@ p {
   text-align: right;
   position: relative;
   bottom: 27px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h1 {
   font-weight: normal;
-  font-family: font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   font-size: 55px;
   color: black;
@@ -47,19 +49,15 @@ h3 {
   text-transform: capitalize;
 }
 
-
-.values{
-  
+.values {
   text-align: center;
   position: relative;
   text-transform: capitalize;
 }
-.calendar{
-
+.calendar {
   text-align: center;
   position: relative;
-  left:3px;
-
+  left: 3px;
 }
 footer {
   text-align: center;
