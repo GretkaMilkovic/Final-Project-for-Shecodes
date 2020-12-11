@@ -40,7 +40,7 @@ let iconElement=document.querySelector("#icon");
 
   dateElement.innerHTML = formatDate(response.data.dt*1000);
 
-  windElement.innerHTML = Math.round(response.data.main.wind);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 
