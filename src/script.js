@@ -27,6 +27,7 @@ function formatDate(timestamp) {
 
 function displayTemperature(response)
 
+
 {
 
   let temperatureElement = document.querySelector("#temperature");
@@ -35,6 +36,8 @@ function displayTemperature(response)
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+let iconElement=document.querySelector("#icon");
+
   dateElement.innerHTML = formatDate(response.data.dt*1000);
 
   windElement.innerHTML = Math.round(response.data.main.wind);
@@ -45,6 +48,10 @@ function displayTemperature(response)
   
   descriptionElement.innerHTML = response.data.weather[0].description;
 }
+
+
+iconElement.setAttribute("src", `http://openweathernap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
 
 function search(city) {
   let apiKey = "82b95efea5e472e6661eb0b2204689f3";
