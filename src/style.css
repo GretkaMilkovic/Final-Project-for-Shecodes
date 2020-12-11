@@ -20,7 +20,7 @@ body {
 }
 .img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 p {
@@ -39,6 +39,13 @@ h1 {
   text-transform: capitalize;
 }
 
+.weather forecast img {
+  display: inline-block;
+  margin: 0 auto;
+  height: 15px;
+  width: 15px;
+}
+
 h2 {
   text-align: center;
   text-transform: capitalize;
@@ -52,6 +59,12 @@ h3 {
   font-size: 38px;
   color: black;
   text-transform: capitalize;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-size: 15px;
 }
 
 .values {
