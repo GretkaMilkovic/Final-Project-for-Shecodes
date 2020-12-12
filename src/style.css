@@ -40,8 +40,9 @@ h1 {
 }
 
 .img icon {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -66,6 +67,7 @@ h4 {
 }
 
 .values {
+  font-weight: bold;
   text-align: center;
   position: relative;
   text-transform: capitalize;

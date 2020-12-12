@@ -38,7 +38,7 @@ function displayTemperature(response)
   let dateElement = document.querySelector("#date");
 let iconElement=document.querySelector("#icon");
 
-  dateElement.innerHTML = formatDate(response.data.dt*1000);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   windElement.innerHTML = Math.round(response.data.wind.speed);
 
