@@ -39,11 +39,9 @@ h1 {
   text-transform: capitalize;
 }
 
-.weather forecast img {
-  display: inline-block;
+.img icon {
+  display: block;
   margin: 0 auto;
-  height: 15px;
-  width: 15px;
 }
 
 h2 {
@@ -77,6 +75,7 @@ h4 {
   position: relative;
   left: 3px;
 }
+
 footer {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

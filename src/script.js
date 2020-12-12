@@ -41,16 +41,18 @@ let iconElement=document.querySelector("#icon");
   dateElement.innerHTML = formatDate(response.data.dt*1000);
 
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 
   cityElement.innerHTML = response.data.name;
   
   descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 
-iconElement.setAttribute("src", `http://openweathernap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
 
 
 function search(city) {
