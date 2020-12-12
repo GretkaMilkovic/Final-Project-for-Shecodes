@@ -39,7 +39,7 @@ h1 {
   text-transform: capitalize;
 }
 
-.img icon {
+.img {
   display: flex;
   justify-content: center;
   align-items: center;
