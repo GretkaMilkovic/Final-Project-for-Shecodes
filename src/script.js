@@ -9,7 +9,7 @@ function formatDate(timestamp) {
   }`;
 }
   let days = [
-    "Sundays",
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -36,14 +36,17 @@ function displayTemperature(response)
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
-let iconElement=document.querySelector("#icon");
+  let iconElement = document.querySelector("#icon");
+  
+  celsiusTemperature=response.data.main.temp
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   windElement.innerHTML = Math.round(response.data.wind.speed);
 
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
 
   cityElement.innerHTML = response.data.name;
   
@@ -85,19 +88,21 @@ function displayCelsiusTemperature(event) {
 
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+
+
 }
+
 
 let celsiusTemperature = null;
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
+
+let form = document.querySelector("#search-form");
+  form.addEventListener("submit", handleSubmit);
+  
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
-
 
 search("Munich");
